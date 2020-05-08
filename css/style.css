@@ -50,14 +50,17 @@
   box-sizing: inherit;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.6;
   color: #777777;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .header {
@@ -71,12 +74,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 40px;
+  height: 4rem;
 }
 
 .text-box {
@@ -92,15 +95,15 @@ body {
   text-transform: uppercase;
 
   backface-visibility: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .heading-primary-main {
   display: block;
   margin: 0 auto;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
   animation: moveInLeft 1s ease-in-out;
 }
 
@@ -108,9 +111,9 @@ body {
   display: block;
   margin: 0 auto;
 
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.7rem;
   animation: moveInRight 1s ease-in-out;
 }
 
