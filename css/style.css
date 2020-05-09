@@ -67,6 +67,42 @@ body {
     letter-spacing: 1.7rem;
     animation: moveInRight 1s ease-in-out; }
 
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(4deg) skewX(4deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-s {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-m {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-l {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -158,31 +194,34 @@ body {
     transform: translate(-50%, -60%);
     text-align: center; }
 
-.grid-test__row {
+.section-about {
+  background-color: #f6f6f6;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
+.row {
   max-width: 114rem;
-  background-color: #000000;
   margin: 0 auto; }
-  .grid-test__row::after {
+  .row::after {
     content: "";
     display: table;
     clear: both; }
-  .grid-test__row:not(:last-child) {
+  .row:not(:last-child) {
     margin-bottom: 8rem; }
-  .grid-test__row [class^="col-"] {
-    background-color: #28b485;
+  .row [class^="col-"] {
     float: left;
     padding: 20px 0; }
-    .grid-test__row [class^="col-"]:not(:last-child) {
+    .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-  .grid-test__row .col-1-of-2 {
+  .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
-  .grid-test__row .col-1-of-3 {
+  .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
-  .grid-test__row .col-2-of-3 {
+  .row .col-2-of-3 {
     width: calc(2 * (100% - 2 * 6rem) / 3 + 6rem); }
-  .grid-test__row .col-1-of-4 {
+  .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
-  .grid-test__row .col-2-of-4 {
+  .row .col-2-of-4 {
     width: calc(2 * (100% - 3 * 6rem) / 4 + 6rem); }
-  .grid-test__row .col-3-of-4 {
+  .row .col-3-of-4 {
     width: calc(3 * (100% - 3 * 6rem) / 4 + 6rem * 2); }

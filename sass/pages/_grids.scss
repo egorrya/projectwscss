@@ -1,9 +1,8 @@
-.grid-test__row {
+.row {
   @include clearfix;
 
   max-width: $grid-width;
 
-  background-color: $color-black;
   margin: 0 auto;
 
 
@@ -14,7 +13,6 @@
 
   // ^ means starts with (also & = contain and $ = ends with)
   [class^="col-"] {
-    background-color: $color-secondary-dark;
     float: left;
     padding: 20px 0;
 
