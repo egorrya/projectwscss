@@ -1,4 +1,6 @@
 .card {
+
+  //functionality
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
@@ -14,6 +16,8 @@
     backface-visibility: hidden;
     border-radius: 15px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+    overflow: hidden;
+
 
     &--front {
       background-color: $color-white;
@@ -42,5 +46,105 @@
 
   &:hover &__side--back {
     transform: rotateY(0deg);
+  }
+
+  // styling front
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom, $color-thertiary-light, $color-thertiary-dark), url(../img/nat-7.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 18rem;
+    right: 1rem;
+    width: 80%;
+
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .8), rgba($color-secondary-dark, .8))
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8))
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom, rgba($color-thertiary-light, .8), rgba($color-thertiary-dark, .8))
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 0.1px solid $color-grey-dark;
+        }
+      }
+    }
+  }
+
+  // back card 
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 200;
   }
 }
