@@ -147,4 +147,8 @@
     font-size: 6rem;
     font-weight: 200;
   }
+
+  @include respond(tab-port) {
+    top: 0;
+  }
 }
