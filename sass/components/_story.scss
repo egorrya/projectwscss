@@ -9,8 +9,19 @@
   font-size: 1.6rem;
   transform: skewX(10deg);
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 3rem;
+    padding-left: 6rem;
+    transform: skewX(0);
+  }
+
   &>* {
     transform: skewX(-10deg);
+
+    @include respond(tab-port) {
+      transform: skewX(0);
+    }
   }
 
   &__shape {
@@ -25,6 +36,10 @@
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-2.6rem) skewX(-10deg);
+
+    @include respond(tab-port) {
+      transform: translateX(0) skewX(0);
+    }
   }
 
   &__image {
